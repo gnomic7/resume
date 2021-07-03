@@ -3,7 +3,7 @@
 import { h } from 'https://x.lcas.dev/preact@10.5.12/mod.js';
 import { renderToString } from 'https://x.lcas.dev/preact@10.5.12/ssr.js';
 import Intro from './components/Intro/mod.tsx';
-
+import Experience from './components/Experience/mod.tsx';
 function App() {
   return (
     <html>
@@ -11,7 +11,8 @@ function App() {
         <title>Resume - Rohit K Dhakal</title>
       </head>
       <body>
-        <Intro />
+        <Intro fullName="Rohit K Dhakal" />
+        <Experience />
       </body>
     </html>
   );
