@@ -2,9 +2,9 @@
 // uses it instead of `React.createElement`
 import { h } from 'https://x.lcas.dev/preact@10.5.12/mod.js';
 import { renderToString } from 'https://x.lcas.dev/preact@10.5.12/ssr.js';
-import Intro from './components/Intro/mod.tsx';
-import Experience from './components/Experience/mod.tsx';
-import AlmaMeter from './components/AlmaMeter/mod.tsx';
+import Intro from './components/Intro/mod';
+import Experience from './components/Experience/mod';
+import AlmaMeter from './components/AlmaMeter/mod';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <body>
         <Intro fullName="Rohit K Dhakal" />
         <Experience />
+        <AlmaMeter />
       </body>
     </html>
   );
