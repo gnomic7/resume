@@ -4,6 +4,8 @@ import { h } from 'https://x.lcas.dev/preact@10.5.12/mod.js';
 import { renderToString } from 'https://x.lcas.dev/preact@10.5.12/ssr.js';
 import Intro from './components/Intro/mod.tsx';
 import Experience from './components/Experience/mod.tsx';
+import AlmaMeter from './components/AlmaMeter/mod.tsx';
+
 function App() {
   return (
     <html>
