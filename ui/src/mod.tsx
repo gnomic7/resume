@@ -2,6 +2,7 @@
 // uses it instead of `React.createElement`
 import { h } from 'https://x.lcas.dev/preact@10.5.12/mod.js';
 import { renderToString } from 'https://x.lcas.dev/preact@10.5.12/ssr.js';
+import Intro from './components/Intro';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <title>Resume - Rohit K Dhakal</title>
       </head>
       <body>
-        <h1>Will get there soon!</h1>
+        <Intro />
       </body>
     </html>
   );
