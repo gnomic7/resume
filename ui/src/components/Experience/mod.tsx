@@ -1,9 +1,19 @@
-import { h } from 'https://x.lcas.dev/preact@10.5.12/mod.js';
+import {
+  h,
+  useEffect,
+  useState,
+} from 'https://x.lcas.dev/preact@10.5.12/mod.js';
 
-const Experience = () => (
+import fetchData from '../../utils/mod';
+
+const Experience = () => {
+  const { experiences, setExperiences } = useState('');
+  useEffect(() => {
+    setExperiences(fetchData({}));
+  }, []);
   <div>
     <h2>Work Experience</h2>
-  </div>
-);
+  </div>;
+};
 
 export default Experience;
